@@ -1,0 +1,23 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.main-menu__link {
+  @include link-style;
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  padding: 5px 10px 4px;
+  margin: 0 3px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #000;
+
+  &:hover {
+    color: #fff;
+    background-color: #00b0ff;
+  }
+}

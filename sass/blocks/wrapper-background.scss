@@ -1,0 +1,16 @@
+.wrapper-background {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &--sea {
+    background-image:
+      linear-gradient(to bottom, transparent 40%, white 65%),
+      url("../img/surfing.jpg");
+  }
+
+  &--surfer {
+    background-image: url("../img/surfing-2.jpg");
+    background-position: center 117px;
+  }
+}

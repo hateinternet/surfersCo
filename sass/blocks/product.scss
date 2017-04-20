@@ -1,0 +1,59 @@
+.product {
+  @include container;
+  width: 1030px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 50px 0 #000;
+  margin-bottom: 180px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -6px;
+    right: -10px;
+    width: 94px;
+    height: 613px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Boards5.svg");
+  }
+}
+
+.product__slider {
+  background-image: linear-gradient(130deg, #00d2ff 48.5%, #fff 48.5%);
+  width: 535px;
+  height: 100%;
+  padding-left: 28px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__image {
+  margin-top: 15px;
+  width: 413px;
+  height: 528px;
+}
+
+.product__preview-images {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product__preview-image {
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+
+  &--active {
+    border: 3px solid #00b0ff;
+  }
+}

@@ -1,0 +1,9 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  @include container;
+}
