@@ -11,24 +11,19 @@
   }
 
   &--surfer {
-    background-image:
-      // url("../img/about-us-white-mask.png"),
-      url("../img/surfing-2.jpg");
-    background-position:
-      // -48% 413px,
-      center 117px;
+    background-image: url("../img/surfing-2.jpg");
+    background-position: center 117px;
 
     &::before {
       position: absolute;
       content: "";
-      width: 1156px;
-      height: 128px;
+      width: 100%;
+      height: 140px;
       background-image: url("../img/caption-about-us.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      top: -3px;
-      left: 50%;
-      transform: translateX(-50%);
+      background-size: 1156px;
+      background-position: center;
     }
   }
 }

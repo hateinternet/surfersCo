@@ -3,13 +3,13 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 20px 50px 20px 10px;
 }
 
 .main-menu__link {
   @include link-style;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   padding: 5px 10px 4px;
   margin: 0 3px;
   font-size: 14px;

@@ -35,7 +35,7 @@
 
   font-weight: normal;
   font-size: 18px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.7px;
 
@@ -73,7 +73,7 @@
 
   font-size: 22px;
   line-height: 38px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Georgia", serif;
   font-style: italic;
 }
 
@@ -83,7 +83,7 @@
   margin-top: 2px;
 
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #00b0ff;
   text-decoration: none;
 
@@ -103,31 +103,35 @@
 }
 
 .about__video {
-  width: 500px;
-  height: 300px;
-  background-image: url("../img/video.jpg");
-  background-repeat: no-repeat;
-  margin-left: 70px;
-  box-shadow: 30px 30px 100px 0 rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 500px;
+  height: 300px;
+  margin-left: 70px;
+
+  background-image: url("../img/video.jpg");
+  background-repeat: no-repeat;
+  box-shadow: 30px 30px 100px 0 rgba(0, 0, 0, 0.3);
 }
 
 .about__video-button {
-  cursor: pointer;
   width: 90px;
   height: 90px;
-  background-image: url("../img/icon-play.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 24px;
-  border: 1px solid #fff;
+
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
+
   transition: all 0.2s;
 
   &:hover {
     padding: 35px;
+
     transform: scale(0.9);
   }
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="35" viewBox="0 0 156 35">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1187" y="3797" width="156" height="35" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="1189.69" y="3798.47" width="151.62" height="31.06" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUxLjYyIiBoZWlnaHQ9IjMxLjA2IiB2aWV3Qm94PSIwIDAgMTUxLjYyIDMxLjA2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjA3OwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNzUuODEiIHkxPSIzMS4wNiIgeDI9Ijc1LjgxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjE1MS42MiIgaGVpZ2h0PSIzMS4wNiIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Logo_Facebook" data-name="Logo Facebook" class="cls-1" d="M1270.61,3813.56a7.181,7.181,0,0,0-3.18.86v9.8a19.826,19.826,0,0,0,2.29.09c3.11,0,3.54-1.43,3.54-3.42v-4.68c0-1.47-.49-2.65-2.65-2.65m-20.69-.53c-2.16,0-2.66,1.18-2.66,2.65v0.83h5.31v-0.83c0-1.47-.49-2.65-2.65-2.65m-40.08,10.2a1.546,1.546,0,0,0,1.76,1.76,6.372,6.372,0,0,0,3.01-.86v-2.32h-2.84c-1.34,0-1.93.25-1.93,1.42m80.9-9.67c-2.17,0-2.92,1.18-2.92,2.65v5.36c0,1.48.75,2.66,2.92,2.66,2.15,0,2.91-1.18,2.91-2.66v-5.36c0-1.47-.76-2.65-2.91-2.65m-91.51,15.68h-6.37v-15.38h-3.18v-5.31h3.18v-3.18c0-4.32,1.8-6.9,6.9-6.9h4.25v5.31h-2.66c-1.98,0-2.12.74-2.12,2.12v2.65h4.81l-0.57,5.31h-4.24v15.38Zm21.75,0.04h-5.31l-0.22-1.34a12.213,12.213,0,0,1-6.01,1.56c-3.9,0-5.97-2.6-5.97-6.19,0-4.23,2.42-5.74,6.74-5.74h4.4v-0.92c0-2.16-.25-2.79-3.57-2.79h-5.45l0.54-5.31h5.94c7.31,0,8.91,2.31,8.91,8.14v12.59Zm18.04-15.04a30.859,30.859,0,0,0-5.84-.69c-2.85,0-3.72.63-3.72,3.05v4.58c0,2.42.87,3.05,3.72,3.05a30.859,30.859,0,0,0,5.84-.69v5.17a28.144,28.144,0,0,1-6.37.82c-6.83,0-9.55-3.59-9.55-8.78v-3.71c0-5.19,2.72-8.79,9.55-8.79a28.738,28.738,0,0,1,6.37.82v5.17Zm19.91,6.51h-11.67v0.43c0,2.42.87,3.05,3.72,3.05a37.638,37.638,0,0,0,7.42-.69v5.17a33.362,33.362,0,0,1-7.95.82c-6.83,0-9.55-3.59-9.55-8.78v-4.24c0-4.54,2.02-8.26,9.02-8.26s9.01,3.68,9.01,8.26v4.24Zm20.69,0.1c0,5.01-1.43,8.67-10.12,8.67a48.437,48.437,0,0,1-8.44-.81v-28.64l6.37-1.06v10.01a14.415,14.415,0,0,1,4.77-.77c6.37,0,7.42,2.85,7.42,7.43v5.17Zm20.4,0.11c0,4.32-1.79,8.51-9.26,8.51s-9.3-4.19-9.3-8.51v-4.17c0-4.33,1.82-8.52,9.3-8.52s9.26,4.19,9.26,8.52v4.17Zm20.38,0c0,4.32-1.79,8.51-9.26,8.51s-9.3-4.19-9.3-8.51v-4.17c0-4.33,1.82-8.52,9.3-8.52s9.26,4.19,9.26,8.52v4.17Zm20.92,8.28h-6.9l-5.83-9.72v9.72h-6.37v-29.17l6.37-1.06v18.78l5.83-9.24h6.9l-6.37,10.08Zm-30.2-15.68c-2.17,0-2.92,1.18-2.92,2.65v5.36c0,1.48.75,2.66,2.92,2.66,2.15,0,2.92-1.18,2.92-2.66v-5.36c0-1.47-.77-2.65-2.92-2.65" transform="translate(-1187 -3797)"/>
+</svg>

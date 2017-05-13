@@ -31,27 +31,95 @@
         <p class="promo__text">We love the motion of the ocean</p>
       </div>
       <section class="product">
-        <div class="product__slider">
-          <div class="product__image">
-            <img src="img/board.png" alt="Board">
-          </div>
-          <div class="product__preview-images">
-            <a href="#" class="product__preview-image  product__preview-image--active">
-              <img src="img/preview-1.png" alt="Alt image 1">
-            </a>
-            <a href="#" class="product__preview-image">
-              <img src="img/preview-2.png" alt="Alt image 2">
-            </a>
-            <a href="#" class="product__preview-image">
-              <img src="img/preview-3.png" alt="Alt image 3">
-            </a>
-            <a href="#" class="product__preview-image">
-              <img src="img/preview-4.png" alt="Alt image 4">
-            </a>
+        <div class="product__nav">
+          <div class="product__nav-btn  product__nav-btn--prev"></div>
+          <div class="product__nav-btn  product__nav-btn--next"></div>
+          <div class="product__page-counter">
+            <span class="product__current-page">05</span><span class="product__last-page">/25</span>
           </div>
         </div>
-        <div class="product__description">
+        <div class="product__inner">
+          <div class="product__slider">
+            <div class="product__image">
+              <img src="img/board.png" alt="Board">
+            </div>
+            <div class="product__preview-images">
+              <a href="#" class="product__preview-image  product__preview-image--active">
+                <img src="img/preview-1.png" alt="Alt image 1">
+              </a>
+              <a href="#" class="product__preview-image">
+                <img src="img/preview-2.png" alt="Alt image 2">
+              </a>
+              <a href="#" class="product__preview-image">
+                <img src="img/preview-3.png" alt="Alt image 3">
+              </a>
+              <a href="#" class="product__preview-image">
+                <img src="img/preview-4.png" alt="Alt image 4">
+              </a>
+            </div>
+          </div>
+          <div class="product__description">
+            <p class="product__title">
+              JR Surfboards The Donny Stoker Yellow/Green Rail Fade
+            </p>
+            <div class="rating">
+              <span class="rating__counter">(52)</span>
+              <input class="rating__input" type="radio" name="stars" id="star5">
+              <label class="rating__label" for="star5"></label>
+              <input class="rating__input" type="radio" name="stars" id="star4" checked>
+              <label class="rating__label" for="star4"></label>
+              <input class="rating__input" type="radio" name="stars" id="star3">
+              <label class="rating__label" for="star3"></label>
+              <input class="rating__input" type="radio" name="stars" id="star2">
+              <label class="rating__label" for="star2"></label>
+              <input class="rating__input" type="radio" name="stars" id="star1">
+              <label class="rating__label" for="star1"></label>
+            </div>
+            <div class="tabs">
+              <input class="tabs__input" type="radio" name="tabs" id="tab1" checked>
+              <label class="tabs__label" for="tab1">Description</label>
+              <input class="tabs__input" type="radio" name="tabs" id="tab2">
+              <label class="tabs__label" for="tab2">Features</label>
+              <input class="tabs__input" type="radio" name="tabs" id="tab3">
+              <label class="tabs__label" for="tab3">Dimensions</label>
 
+              <article class="tabs__article" id="content-tab1">
+                <h3 class="tabs__title">Description</h3>
+                <p class="tabs__text">
+                  Easy to ride, care free surfing craft that's fun for everyone,
+                  paddles well, super fast down the line and great for any level
+                  of surfing depending on who rides it. The Donny Stoker, a rework
+                  on design from stokesys first ever pro model. A super easy
+                  to surf and fun board. The Donny Stoker is a board for total
+                  freesurfing expression.
+                </p>
+              </article>
+              <article class="tabs__article" id="content-tab2">
+                <h3 class="tabs__title">Features</h3>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perferendis nisi temporibus repellat repudiandae molestiae
+                  suscipit, tenetur minima inventore quis delectus saepe
+                  laudantium voluptatum amet natus officiis? Quaerat assumenda
+                  voluptatum, explicabo.
+                </p>
+              </article>
+              <article class="tabs__article" id="content-tab3">
+                <h3 class="tabs__title">Dimensions</h3>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laudantium aspernatur quae totam, possimus ullam ex dolor
+                  eius tempora officia laborum, magni eos accusantium,
+                  accusamus error! Non reiciendis aut, mollitia debitis.
+                </p>
+              </article>
+            </div>
+            <div class="product__purchasing">
+              <span class="product__price">$499.99</span>
+              <a class="product__buy-button  button" href="#">Buy now</a>
+            </div>
+            <a href="#" class="product__link">View all boards</a>
+          </div>
         </div>
       </section>
     </div>
@@ -106,5 +174,149 @@
       </div>
       <div class="team__nav-btn  team__nav-btn--next"></div>
     </section>
+    <section class="updates">
+      <h2 class="updates__title">Latest updates</h2>
+      <div class="updates__posts">
+        <a href="#" class="updates__post">
+          <img src="img/post-1.jpg" alt="Girls" class="updates__image" width="270" height="203">
+          <p class="updates__text">
+            Ellie Turner and Jobe Harris have taken
+            out the 2016 British National Surf Championships
+          </p>
+        </a>
+        <a href="#" class="updates__post">
+          <img src="img/post-2.jpg" alt="Waves" class="updates__image" width="270" height="203">
+          <p class="updates__text">
+            A large group of surfers invaded the coast
+            of La Jolla Shores, in California, with a
+            single goal in mind
+          </p>
+        </a>
+        <a href="#" class="updates__post">
+          <img src="img/post-3.jpg" alt="Beach" class="updates__image" width="270" height="203">
+          <p class="updates__text">
+            Surfboards are constantly evolving, and
+            there are multiple board designs for a board
+            range of environments
+          </p>
+        </a>
+      </div>
+      <a href="#" class="updates__button  button">View all posts</a>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__widgets">
+        <div class="instagram">
+          <a href="#" class="instagram__picture-link">
+            <img src="../img/insta-picture-1.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+          </a>
+          <a href="#" class="instagram__picture-link">
+            <img src="../img/insta-picture-2.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+          </a>
+          <a href="#" class="instagram__picture-link">
+            <img src="../img/insta-picture-3.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+          </a>
+          <a href="#" class="instagram__picture-link">
+            <img src="../img/insta-picture-4.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+          </a>
+          <a href="#" class="instagram__link">
+            <span class="instagram__follow">Follow us</span>
+            <span class="instagram__profile">@surfersco</span>
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="#" class="facebook__logo-link">
+            <img src="../img/facebook-widget-logo.svg" alt="Facebook logo" class="facebook__logo" width="156" height="35">
+          </a>
+          <div class="facebook__inner">
+            <div class="facebook__info">
+              <div class="facebook__community-picture">Srfrs co</div>
+              <div class="facebook__community-text">
+                <a href="#" class="facebook__community-name">Surfers Co.</a>
+                <span class="facebook__like-count">52,000 likes</span>
+              </div>
+            </div>
+            <div class="facebook__buttons">
+              <a href="#" class="facebook__btn  facebook__btn--like">Like Page</a>
+              <a href="#" class="facebook__btn  facebook__btn--share">Share</a>
+            </div>
+            <div class="facebook__people">
+              <p class="facebook__people-text">
+                You and 8 friends like this
+              </p>
+              <div class="facebook__photos">
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-1.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-2.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-3.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-4.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-5.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-6.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-7.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-8.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+                <a href="#" class="facebook__user-link">
+                  <img src="../img/facebook-widget-user-9.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__info-container">
+        <div class="page-footer__info">
+          <div class="page-footer__copyright">&copy; 2017 Surfers Co. ● Design by @lucaalco</div>
+          <div class="page-footer__navigation-container">
+            <ul class="page-footer__navigation">
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">About</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Technology</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="" class="page-footer__navigation-link">Boards</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Team</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Accessories</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Dealers</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Blog</a>
+              </li>
+              <li class="page-footer__navigation-item">
+                <a href="#" class="page-footer__navigation-link">Contact us</a>
+              </li>
+            </ul>
+            <div class="page-footer__subscribe">
+              <p class="page-footer__subscribe-title">Subscribe to our newsletter</p>
+              <form class="page-footer__subscribe-form" action="/">
+                <input class="page-footer__email-input" type="text" name="email" placeholder="Your e-mail">
+                <button class="page-footer__submit-button" type="submit" name="button"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -44,12 +44,22 @@
 }
 
 @font-face {
-  font-weight: 600;
+  font-weight: bold;
   font-family: "Raleway";
   font-style: normal;
 
   src: url("../fonts/raleway-semibold-webfont.woff2") format("woff2"),
   url("../fonts/raleway-semibold-webfont.woff") format("woff");
+}
+
+
+@font-face {
+  font-weight: bold;
+  font-family: "Roboto condensed";
+  font-style: normal;
+
+  src: url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"),
+  url("../fonts/robotocondensed-bold-webfont.woff") format("woff");
 }
 
 body {

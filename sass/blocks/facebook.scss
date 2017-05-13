@@ -1,0 +1,151 @@
+.facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 441px;
+  height: 348px;
+  margin-top: 115px;
+  margin-left: 49px;
+
+  background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
+}
+
+.facebook__logo-link {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.facebook__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 340px;
+  height: 214px;
+  padding: 8px;
+
+  background-color: #f6f7f9;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 25%),
+  url("../img/facebook-widget-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.facebook__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.facebook__community-picture {
+  box-sizing: border-box;
+  width: 54px;
+  height: 54px;
+  margin-right: 5px;
+  padding-top: 13px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #00b0ff;
+  border: 2px solid #ffffff;
+}
+
+.facebook__community-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.facebook__community-name {
+  margin-bottom: 1px;
+
+  font-size: 18px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.facebook__like-count {
+  font-size: 12px;
+}
+
+.facebook__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.facebook__btn {
+  position: relative;
+
+  box-sizing: border-box;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 25px;
+
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #4b4f56;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    width: 12px;
+    height: 12px;
+
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  &--like::before {
+    background-image: url("../img/facebook-widget-icon-logo.svg");
+  }
+
+  &--share::before {
+    background-image: url("../img/facebook-widget-icon-share.svg");
+  }
+}
+
+.facebook__people {
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.facebook__people-text {
+  margin: 5px 0;
+
+  font-size: 12px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #4b4f56;
+}
+
+.facebook__photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 0;
+}

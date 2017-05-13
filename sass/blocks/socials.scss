@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  padding-top: 3px;
+}
+
+.socials__link {
+  font-size: 0;
+  display: block;
+  width: 37px;
+  height: 37px;
+  background-color: #fff;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--inst {
+    background-image: url("../img/icon-instagram.svg");
+  }
+
+  &--mail {
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &:hover {
+    background-color: #e0ffff;
+  }
+}
