@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber'); // no crash
 var rename = require('gulp-rename');
@@ -163,4 +164,10 @@ gulp.task('build', function (fn) {
       // 'build svg sprite',
       fn
   );
+});
+
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
