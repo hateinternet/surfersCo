@@ -30,26 +30,30 @@
   align-items: center;
   width: 100%;
   padding: 19px 68px;
+  padding-left: 21px;
 
   font-size: 0;
   text-decoration: none;
 
   background-color: #ffffff;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 20px;
+  transition: all 0.2s;
 
-    width: 29px;
-    height: 29px;
+  &:hover {
+    background-color: #343434;
 
-    background-image: url("../img/icon-widget-instagram.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-50%);
+    & .instagram__profile {
+      color: #ffffff;
+    }
   }
+}
+
+.instagram__icon {
+  width: 29px;
+  height: 29px;
+  margin-right: 19px;
+
+  fill: #00b0ff;
 }
 
 .instagram__follow {
@@ -66,4 +70,6 @@
   font-size: 16px;
   font-family: "Raleway", "Arial", sans-serif;
   color: #000000;
+
+  transition: all 0.2s;
 }

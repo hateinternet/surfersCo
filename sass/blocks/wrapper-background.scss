@@ -2,12 +2,12 @@
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100% auto;
   position: relative;
 
   &--sea {
-    background-image:
-      linear-gradient(to bottom, transparent 40%, white 65%),
-      url("../img/surfing.jpg");
+    padding-bottom: 180px;
+    background-image: url("../img/background-header.jpg");
   }
 
   &--surfer {
@@ -21,8 +21,6 @@
       height: 140px;
       background-image: url("../img/caption-about-us.svg");
       background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 1156px;
       background-position: center;
     }
   }
