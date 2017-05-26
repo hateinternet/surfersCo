@@ -1,9 +1,16 @@
 .main-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 20px 50px 20px 10px;
+}
+
+.main-menu__items {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.main-menu__item {
+  margin: 0 3px;
 }
 
 .main-menu__link {
@@ -11,10 +18,10 @@
   text-transform: uppercase;
   font-family: "Montserrat", "Arial", sans-serif;
   padding: 5px 10px 4px;
-  margin: 0 3px;
   font-size: 14px;
   vertical-align: middle;
   color: #000;
+  transition: all 0.1s;
 
   &:hover {
     color: #fff;

@@ -1,16 +1,3 @@
-
-
-.page-footer__widgets {
-  @include container;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: -77px;
-
-  transform: translateY(178px);
-}
-
 .page-footer__info-container {
   width: 100%;
   margin-top: 30px;
@@ -83,6 +70,8 @@
   color: #ffffff;
   text-decoration: none;
 
+  transition: all 0.2s;
+
   &:hover {
     color: #4c4c4c;
   }
@@ -112,7 +101,7 @@
   padding-left: 26px;
 
   font-size: 14px;
-  color: #4d4d4d;
+  color: #ffffff;
 
   background-color: transparent;
   background-image: url("../img/icon-mail-footer.svg");
@@ -122,18 +111,34 @@
 }
 
 .page-footer__submit-button {
+  display: flex;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
   width: 22px;
   height: 22px;
   margin: 0;
   padding: 0;
 
   background-color: #00b0ff;
-  background-image: url("../img/icon-right-arrow-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #ffffff;
+
+    & .page-footer__submit-icon {
+      fill: #0022ff;
+    }
+  }
+}
+
+.page-footer__submit-icon {
+  width: 15px;
+  height: 15px;
+
+  fill: #ffffff;
 }

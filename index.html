@@ -4,38 +4,75 @@
     <meta charset="utf-8">
     <title>Surfers Co. - Main page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
   </head>
   <body>
     <div class="wrapper-background  wrapper-background--sea">
       <header class="page-header">
         <a class="logo">
-          <img class="logo__img" src="../img/logo-surfers.png" alt="Logotype" width="174" height="27">
+          <img class="logo__img" src="../img/logo-header.svg" alt="Logotype" width="174" height="27">
         </a>
         <nav class="main-menu">
-          <a href="#" class="main-menu__link">Boards</a>
-          <a href="#" class="main-menu__link">Accessories</a>
-          <a href="#" class="main-menu__link">Blog</a>
-          <a href="#" class="main-menu__link">Technology</a>
-          <a href="#" class="main-menu__link">Team</a>
-          <a href="#" class="main-menu__link">Dealers</a>
+          <ul class="main-menu__items">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Boards</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Accessories</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Blog</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Technology</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Team</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Dealers</a>
+            </li>
+          </ul>
         </nav>
         <div class="socials">
-          <a href="#" class="socials__link  socials__link--fb">Facebook</a>
-          <a href="#" class="socials__link  socials__link--inst">Instagram</a>
-          <a href="mailto:surfers@surfers.com?subject=feedback" class="socials__link  socials__link--mail">Email</a>
+          <a href="#" class="socials__link  socials__link--facebook">
+            <svg class="socials__icon  socials__icon--facebook">
+              <use xlink:href="img/sprite/sprite.svg#icon-header-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="socials__link  socials__link--instagram">
+            <svg class="socials__icon  socials__icon--instagram">
+              <use xlink:href="img/sprite/sprite.svg#icon-header-inst"></use>
+            </svg>
+          </a>
+          <a href="mailto:surfers@surfers.com?subject=feedback" class="socials__link  socials__link--mail">
+            <svg class="socials__icon  socials__icon--mail">
+              <use xlink:href="img/sprite/sprite.svg#icon-header-mail"></use>
+            </svg>
+          </a>
         </div>
       </header>
       <div class="promo">
-        <h1 class="promo__header">Ride every wave as if it's your last</h1>
+        <p class="promo__header">Ride every wave as if it's your last</p>
         <p class="promo__text">We love the motion of the ocean</p>
       </div>
       <section class="product">
         <div class="product__nav">
-          <div class="product__nav-btn  product__nav-btn--prev"></div>
-          <div class="product__nav-btn  product__nav-btn--next"></div>
+          <a class="product__nav-btn  product__nav-btn--prev">
+            <svg class="product__nav-icon  product__nav-icon--prev">
+              <use xlink:href="img/sprite/sprite.svg#icon-left-arrow"></use>
+            </svg>
+          </a>
+          <a class="product__nav-btn  product__nav-btn--next">
+            <svg class="product__nav-icon  product__nav-icon--next">
+              <use xlink:href="img/sprite/sprite.svg#icon-right-arrow"></use>
+            </svg>
+          </a>
           <div class="product__page-counter">
-            <span class="product__current-page">05</span><span class="product__last-page">/25</span>
+            <span class="product__current-page">05</span><span class="product__last-page">25</span>
           </div>
         </div>
         <div class="product__inner">
@@ -76,16 +113,19 @@
               <label class="rating__label" for="star1"></label>
             </div>
             <div class="tabs">
-              <input class="tabs__input" type="radio" name="tabs" id="tab1" checked>
-              <label class="tabs__label" for="tab1">Description</label>
-              <input class="tabs__input" type="radio" name="tabs" id="tab2">
-              <label class="tabs__label" for="tab2">Features</label>
-              <input class="tabs__input" type="radio" name="tabs" id="tab3">
-              <label class="tabs__label" for="tab3">Dimensions</label>
-
-              <article class="tabs__article" id="content-tab1">
-                <h3 class="tabs__title">Description</h3>
-                <p class="tabs__text">
+              <ul class="tabs__navigation">
+                <li class="tabs__item  tabs__item--active" data-tab-name="Description">
+                  <a href="#" class="tabs__link">Description</a>
+                </li>
+                <li class="tabs__item" data-tab-name="Features">
+                  <a href="#" class="tabs__link">Features</a>
+                </li>
+                <li class="tabs__item" data-tab-name="Dimensions">
+                  <a href="#" class="tabs__link">Dimensions</a>
+                </li>
+              </ul>
+              <div class="tabs__content">
+                <p class="tabs__text  tabs__text--active" data-tab-content="Description">
                   Easy to ride, care free surfing craft that's fun for everyone,
                   paddles well, super fast down the line and great for any level
                   of surfing depending on who rides it. The Donny Stoker, a rework
@@ -93,26 +133,20 @@
                   to surf and fun board. The Donny Stoker is a board for total
                   freesurfing expression.
                 </p>
-              </article>
-              <article class="tabs__article" id="content-tab2">
-                <h3 class="tabs__title">Features</h3>
-                <p class="tabs__text">
+                <p class="tabs__text" data-tab-content="Features">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Perferendis nisi temporibus repellat repudiandae molestiae
                   suscipit, tenetur minima inventore quis delectus saepe
                   laudantium voluptatum amet natus officiis? Quaerat assumenda
                   voluptatum, explicabo.
                 </p>
-              </article>
-              <article class="tabs__article" id="content-tab3">
-                <h3 class="tabs__title">Dimensions</h3>
-                <p class="tabs__text">
+                <p class="tabs__text" data-tab-content="Dimensions">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Laudantium aspernatur quae totam, possimus ullam ex dolor
                   eius tempora officia laborum, magni eos accusantium,
                   accusamus error! Non reiciendis aut, mollitia debitis.
                 </p>
-              </article>
+              </div>
             </div>
             <div class="product__purchasing">
               <span class="product__price">$499.99</span>
@@ -145,34 +179,42 @@
       </section>
     </div>
     <section class="team">
-      <div class="team__nav-btn  team__nav-btn--prev"></div>
+      <div class="team__nav-btn  team__nav-btn--prev">
+        <svg class="team__nav-icon  team__nav-icon--prev">
+          <use xlink:href="img/sprite/sprite.svg#icon-left-arrow"></use>
+        </svg>
+      </div>
       <div class="team__cards">
-        <a class="team__card" href="#">
+        <a class="team__card  team__card--show" href="#">
           <img src="img/avatar-1.png" alt="User pic" class="team__avatar" width="100" height="100">
           <span class="team__name">Taj Burrow</span>
           <span class="team__profile">@tajamos</span>
           <span class="team__location">Yallingup, Australia</span>
         </a>
-        <a class="team__card  team__card--ahead" href="#">
+        <a class="team__card  team__card--show" href="#">
           <img src="img/avatar-2.png" alt="User pic" class="team__avatar" width="100" height="100">
           <span class="team__name">Malia Manuel</span>
           <span class="team__profile">@maliamanuel</span>
           <span class="team__location">Wailua, Hi</span>
         </a>
-        <a class="team__card" href="#">
+        <a class="team__card  team__card--show" href="#">
           <img src="img/avatar-3.png" alt="User pic" class="team__avatar" width="100" height="100">
           <span class="team__name">Ian Walsh</span>
           <span class="team__profile">@ian.walsh</span>
           <span class="team__location">Maui, Hi</span>
         </a>
-        <a class="team__card  team__card--ahead" href="#">
+        <a class="team__card  team__card--show" href="#">
           <img src="img/avatar-4.png" alt="User pic" class="team__avatar" width="100" height="100">
           <span class="team__name">Macy Callaghan</span>
           <span class="team__profile">@macyjanecallaghan</span>
           <span class="team__location">San Clemente, CA</span>
         </a>
       </div>
-      <div class="team__nav-btn  team__nav-btn--next"></div>
+      <div class="team__nav-btn  team__nav-btn--next">
+        <svg class="team__nav-icon  team__nav-icon--next">
+          <use xlink:href="img/sprite/sprite.svg#icon-right-arrow"></use>
+        </svg>
+      </div>
     </section>
     <section class="updates">
       <h2 class="updates__title">Latest updates</h2>
@@ -204,79 +246,37 @@
       <a href="#" class="updates__button  button">View all posts</a>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__widgets">
-        <div class="instagram">
-          <a href="#" class="instagram__picture-link">
-            <img src="../img/insta-picture-1.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
-          </a>
-          <a href="#" class="instagram__picture-link">
-            <img src="../img/insta-picture-2.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
-          </a>
-          <a href="#" class="instagram__picture-link">
-            <img src="../img/insta-picture-3.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
-          </a>
-          <a href="#" class="instagram__picture-link">
-            <img src="../img/insta-picture-4.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
-          </a>
-          <a href="#" class="instagram__link">
-            <span class="instagram__follow">Follow us</span>
-            <span class="instagram__profile">@surfersco</span>
-          </a>
-        </div>
-        <div class="facebook">
-          <a href="#" class="facebook__logo-link">
-            <img src="../img/facebook-widget-logo.svg" alt="Facebook logo" class="facebook__logo" width="156" height="35">
-          </a>
-          <div class="facebook__inner">
-            <div class="facebook__info">
-              <div class="facebook__community-picture">Srfrs co</div>
-              <div class="facebook__community-text">
-                <a href="#" class="facebook__community-name">Surfers Co.</a>
-                <span class="facebook__like-count">52,000 likes</span>
-              </div>
-            </div>
-            <div class="facebook__buttons">
-              <a href="#" class="facebook__btn  facebook__btn--like">Like Page</a>
-              <a href="#" class="facebook__btn  facebook__btn--share">Share</a>
-            </div>
-            <div class="facebook__people">
-              <p class="facebook__people-text">
-                You and 8 friends like this
-              </p>
-              <div class="facebook__photos">
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-1.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-2.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-3.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-4.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-5.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-6.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-7.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-8.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-                <a href="#" class="facebook__user-link">
-                  <img src="../img/facebook-widget-user-9.jpg" alt="FB user pic" class="facebook__photo" width="32" height="32">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="widgets">
+      <div class="instagram">
+        <a href="#" class="instagram__picture-link">
+          <img src="../img/insta-picture-1.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+        </a>
+        <a href="#" class="instagram__picture-link">
+          <img src="../img/insta-picture-2.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+        </a>
+        <a href="#" class="instagram__picture-link">
+          <img src="../img/insta-picture-3.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+        </a>
+        <a href="#" class="instagram__picture-link">
+          <img src="../img/insta-picture-4.jpg" alt="Instagram picture" class="instagram__picture" width="310" height="310">
+        </a>
+        <a href="#" class="instagram__link">
+          <svg class="instagram__icon">
+            <use xlink:href="img/sprite/sprite.svg#icon-header-inst"></use>
+          </svg>
+          <span class="instagram__follow">Follow us</span>
+          <span class="instagram__profile">@surfersco</span>
+        </a>
       </div>
+      <div class="facebook">
+        <a href="#" class="facebook__logo-link">
+          <img src="../img/facebook-widget-logo.svg" alt="Facebook logo" class="facebook__logo" width="156" height="35">
+        </a>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsurfer&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+    </section>
+
+    <footer class="page-footer">
       <div class="page-footer__info-container">
         <div class="page-footer__info">
           <div class="page-footer__copyright">&copy; 2017 Surfers Co. ● Design by @lucaalco</div>
@@ -311,12 +311,26 @@
               <p class="page-footer__subscribe-title">Subscribe to our newsletter</p>
               <form class="page-footer__subscribe-form" action="/">
                 <input class="page-footer__email-input" type="text" name="email" placeholder="Your e-mail">
-                <button class="page-footer__submit-button" type="submit" name="button"></button>
+                <button class="page-footer__submit-button" type="submit" name="button">
+                  <svg class="page-footer__submit-icon">
+                    <use xlink:href="img/sprite/sprite.svg#icon-right-arrow"></use>
+                  </svg>
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      svg4everybody();
+    </script>
+    <script type="text/javascript">
+      $(function() {
+    		$('.product__title').dotdotdot();
+      });
+    </script>
+    <script type="text/javascript" src="js/select-tab.js"></script>
   </body>
 </html>
